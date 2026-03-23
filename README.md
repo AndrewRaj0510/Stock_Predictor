@@ -104,7 +104,7 @@ These keep your data and features current:
 
 ```bash
 cd backend
-source venv/Scripts/activate
+venv\scripts\Activate
 
 # 1. Fetch latest EOD prices from FMP API
 python data_pipeline/fetch_and_store.py
@@ -122,7 +122,7 @@ Model retraining is compute-intensive and doesn't need to happen daily:
 
 ```bash
 cd backend
-source venv/Scripts/activate
+venv\scripts\Activate
 
 # Retrain all models (5-fold time series CV across all tickers)
 python main_training_pipeline.py
@@ -194,3 +194,9 @@ DuckDB stores all data in a single file (`data/stock_latest.db`):
 | `eod_prices_clean` | End-of-day OHLCV prices (primary key: symbol, date) |
 | `model_features` | Computed features per ticker per date |
 | `model_targets` | Prediction targets per ticker per date |
+
+## Screenshots
+<img width="1918" height="860" alt="image" src="https://github.com/user-attachments/assets/5ee94202-e89b-4f75-b86c-0ee3a7630fad" />
+<img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/6f96cdb3-ace3-4c8e-8ff9-d1ac6b12c567" />
+
+
