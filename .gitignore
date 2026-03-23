@@ -1,0 +1,50 @@
+# Byte-compiled / Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Python environment files
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# DuckDB databases
+data/*.db
+data/*.db.wal
+
+# Data cache
+data/cache/
+
+# Node.js
+node_modules/
+.next/
+
+# Model artifacts (large binary files)
+backend/models/artifacts/**/*.pkl
+backend/models/artifacts/**/*.json
+!backend/models/artifacts/.gitkeep
+
+# Claude Code / AI assistant files
+CLAUDE.md
+PLAN.md
+
+# IDE
+.idea/
+*.swp
+*.swo
